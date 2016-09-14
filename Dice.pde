@@ -19,6 +19,7 @@ void draw()
 		
 		}
 	}
+fill(0,0,255);
 textSize(50);
 textAlign(CENTER);
 text("this is " + sum,500,850);
@@ -45,7 +46,7 @@ class Die
 
 	void roll()
 		{
-			fill(0);
+			fill((int)(Math.random()*50)+100,(int)(Math.random()*50)+75,(int)(Math.random()*50)+200);
 			if (value ==1)
 			{
 				ellipse(myX+25,myY+25,10,10);
@@ -96,8 +97,8 @@ class Die
 		}
 	void show()
 	{
-		fill(255);
-		rect(myX,myY,50,50);
+		fill(255,(int)(Math.random()*50)+200,(int)(Math.random()*50));
+		rect(myX,myY,50,50,10);
 
 	}
 }
